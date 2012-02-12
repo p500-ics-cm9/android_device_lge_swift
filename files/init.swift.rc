@@ -1,5 +1,5 @@
-#on boot-pause
-#    exec sbin/chargerlogo
+#on early-boot
+#	exec sbin/chargerlogo
 
 #import init.swift.usb.rc
 
