@@ -38,6 +38,10 @@ extern "C" {
 #include <msm_camera.h>
 }
 
+enum {
+    CAMERA_ERROR_UKNOWN  = 1,
+};
+
 struct str_map {
     const char *const desc;
     int val;

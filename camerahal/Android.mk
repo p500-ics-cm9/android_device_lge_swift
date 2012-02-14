@@ -24,11 +24,24 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 
 LOCAL_MODULE_TAGS := optional
 
+LOCAL_SHARED_LIBRARIES := \
+    libcutils \
+    libutils \
+    libmedia \
+    libcamera_client \
+    libbinder \
+    libhardware_legacy
+
+LOCAL_SHARED_LIBRARIES += libdl
+
 LOCAL_SRC_FILES := camera.cpp
 LOCAL_SHARED_LIBRARIES := liblog libutils libcutils
 LOCAL_SHARED_LIBRARIES += libui libhardware libcamera_client
 LOCAL_SHARED_LIBRARIES += libcamera
 LOCAL_PRELINK_MODULE := false
+
+LOCAL_STATIC_LIBRARIES := \
+    libmedia_helper
 
 include $(BUILD_SHARED_LIBRARY)
 

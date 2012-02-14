@@ -81,6 +81,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	transition_animation_scale=0 \
         net.dns1=8.8.8.8 \
         net.dns2=8.8.4.4 \
+	dalvik.vm.checkjni=false \
+	dalvik.vm.dexopt-data-only=1 \
 
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.secure=0 \

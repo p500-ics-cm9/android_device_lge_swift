@@ -155,6 +155,8 @@ PRODUCT_COPY_FILES += \
 # HW
 PRODUCT_COPY_FILES += \
 	device/lge/swift/proprietary/lib/lights.swift.so:system/lib/hw/lights.swift.so \
+#	device/lge/swift/proprietary/lib/gralloc.swift.so:system/lib/hw/gralloc.swift.so \
+#	device/lge/swift/proprietary/lib/gralloc.default.so:system/lib/hw/gralloc.default.so \
 #	device/lge/swift/proprietary/lib/sensors.swift.so:system/lib/hw/sensors.swift.so \
 	
 # Custom apps
