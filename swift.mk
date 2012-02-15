@@ -2,6 +2,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Should be after the full_base include, which loads languages_full
 PRODUCT_LOCALES += ru_RU mdpi
+PRODUCT_AAPT_CONFIG := normal mdpi
+PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
@@ -51,6 +53,7 @@ PRODUCT_PACKAGES += \
 	liblgeat \
 	liblgerft \
 	libOmxCore \
+	libOmxVidEnc \
 	libmm-omxcore \
 	libstagefrighthw \
 	audio.a2dp.default \
@@ -62,27 +65,37 @@ PRODUCT_PACKAGES += \
 	hcitool \
 
 PRODUCT_PACKAGES += \
-        librs_jni \
-	LedNotifications \
-#        LiveWallpapers \
-#        LiveWallpapersPicker \
-#        VisualizationWallpapers \
+	librs_jni \
+#	LedNotifications \
+#	LiveWallpapers \
+#	LiveWallpapersPicker \
+#	VisualizationWallpapers \
 
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.com.google.locationfeatures=1 \
 	ro.telephony.call_ring.multiple=false \
 	ro.telephony.call_ring.delay=3000 \
+	pm.sleep_mode=true \
 	ro.url.safetylegal=http://4pda.ru/forum/index.php?showuser=1382803 \
 	ro.com.android.dataroaming=false \
 	persist.sys.strictmode.visual=0 \
-	ro.config.disable_hw_accel=true \
+	ro.config.disable_hw_accel=false \
 	window_animation_scale=0 \
 	transition_animation_scale=0 \
-        net.dns1=8.8.8.8 \
-        net.dns2=8.8.4.4 \
+    net.dns1=8.8.8.8 \
+    net.dns2=8.8.4.4 \
 	dalvik.vm.checkjni=false \
 	dalvik.vm.dexopt-data-only=1 \
+	
+PRODUCT_PROPERTY_OVERRIDES += \
+	hwui.render_dirty_regions=false \
+	hwui.disable_vsync=true \
+	hwui.print_config=choice \
+	debug.enabletr=false \
+	debug.sf.hw=1 \
+	debug.composition.type=mdp \
+	debug.gr.numframebuffers=2 \
 
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.secure=0 \

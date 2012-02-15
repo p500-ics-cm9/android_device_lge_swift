@@ -25,8 +25,6 @@ persist.cust.tel.eons=1
 dalvik.vm.execution-mode=int:jit
 dalvik.vm.verify-bytecode=false
 dalvik.vm.dexopt-flags=m=y,u=n
-debug.sf.hw=1
-ro.config.disable_hw_accel=true
 
 # larger vm heaps
 dalvik.vm.heapsize=24m
@@ -34,13 +32,13 @@ dalvik.vm.heapsize=24m
 # modified camera blob wants this
 ro.product.camera=swift
 
-ro.bt.bdaddr_path=/data/misc/bd_addr
+#ro.bt.bdaddr_path=/data/misc/bd_addr
 
 persist.sys.usb.config=mass_storage,adb
 persist.service.adb.enable=1
 ro.opengles.version=131072
-#ro.ril.baseband=AMSS53404003
-ro.build.baseband_version=AMSS53404003
+ro.ril.baseband=AMSS53404003
 
 wifi.interface=wlan0
 wifi.supplicant_scan_interval=45
+wifi.supplicant_no_update_ctrl=true
