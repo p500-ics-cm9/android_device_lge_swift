@@ -1,1 +1,9 @@
-Device folder for LG GT540
+# Copyright (c) 2008-2012 The Android Open Source Project.
+# Copyright (c) 2008-2012, Code Aurora Forum.
+# Copyright (c) 2010-2012, The CyanogenMod Project.
+# Copyright (c) 2011-2012, miroslav_mm.
+
+Device folder for LG GT540 (Swift)
+
+Project IceCreamSwift
+Base on CyanogenMod 9 Androin 4.0.3

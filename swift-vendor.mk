@@ -150,6 +150,7 @@ PRODUCT_COPY_FILES += \
 	device/lge/swift/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
 	device/lge/swift/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
 	device/lge/swift/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
+	device/lge/swift/proprietary/lib/egl/libOpenVG.so:system/lib/libOpenVG.so \
 	device/lge/swift/proprietary/lib/egl/libgsl.so:system/lib/libgsl.so \
 
 # HW
