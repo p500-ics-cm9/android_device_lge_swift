@@ -92,10 +92,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	hwui.render_dirty_regions=false \
 	hwui.disable_vsync=true \
 	hwui.print_config=choice \
-	debug.enabletr=false \
 	debug.sf.hw=1 \
-	debug.composition.type=mdp \
-	debug.gr.numframebuffers=2 \
+	debug.composition.type=gpu \
+#	debug.composition.type=mdp \
+#	debug.overlayui.enable=1 \
+#	debug.gr.numframebuffers=2 \
+#	debug.enabletr=false \
 
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.secure=0 \
